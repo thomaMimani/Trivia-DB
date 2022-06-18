@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h6>Choose category: <span>{{category}}</span></h6>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-around">
+        <div class="col-3 category m-1" *ngFor="let category of selectCategory" (click)="getCategory()" >
+            <div>
+                <p>{{category.categoryName}}</p>
+            </div>
+        </div>
+    </div>
+</div>
